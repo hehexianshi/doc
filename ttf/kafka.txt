@@ -1,0 +1,11 @@
+安装kafka php扩展
+需要先安装  https://github.com/edenhill/librdkafka
+
+zookeeper
+
+./configure --with-php-config=/usr/local/phpt/version/5.4.32/bin/php-config --with-libzookeeper-dir=/usr/local/zookeeper
+
+先编译 zookeeper 下 C的 make install
+
+
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
